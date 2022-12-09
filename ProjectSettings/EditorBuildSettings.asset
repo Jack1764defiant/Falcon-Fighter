@@ -47,5 +47,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossRush3.unity
     guid: a22e78126785a0445a08c78109834f4e
+  - enabled: 1
+    path: Assets/Scenes/Endless.unity
+    guid: 8aba909a405fca845932263d1401dc63
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: 884e4ea103eb0c84c9fe8110afd53ad6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6d92f99cd2482174495ddd9c06a4844e, type: 2}

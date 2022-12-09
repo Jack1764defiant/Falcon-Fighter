@@ -384,7 +384,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4132acd1a26e5ae4a9f2e194659253a4, type: 2}
+  - {fileID: 2100000, guid: 604e4fc978f8ad84cb9e1a8fba4ef2d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -537,6 +537,10 @@ MonoBehaviour:
   reward: 20
   health: 2
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!65 &7659784797654902885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -563,6 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 0}
   Delay: 2
   alwaysFire: 0
 --- !u!1 &3070669278718145622
@@ -707,7 +712,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4132acd1a26e5ae4a9f2e194659253a4, type: 2}
+  - {fileID: 2100000, guid: 604e4fc978f8ad84cb9e1a8fba4ef2d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -860,6 +865,10 @@ MonoBehaviour:
   reward: 20
   health: 2
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!65 &7988964294528311833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -886,6 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 0}
   Delay: 2
   alwaysFire: 0
 --- !u!1 &5146783985493565741
@@ -984,6 +994,10 @@ MonoBehaviour:
   reward: 100
   health: 10
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &7731306510668269302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,6 +1011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6958116329377823816, guid: 36e3b8d95a6f5304c987980fce001a9a, type: 3}
+  projectilePrefabAlt: {fileID: 0}
   Delay: 1.75
   alwaysFire: 1
 --- !u!65 &-1716905233566329110
@@ -1471,6 +1486,10 @@ MonoBehaviour:
   reward: 20
   health: 2
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!65 &9125635570279513795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1497,6 +1516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 0}
   Delay: 2
   alwaysFire: 0
 --- !u!1 &8402640178054561218
@@ -1559,7 +1579,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4132acd1a26e5ae4a9f2e194659253a4, type: 2}
+  - {fileID: 2100000, guid: 604e4fc978f8ad84cb9e1a8fba4ef2d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
