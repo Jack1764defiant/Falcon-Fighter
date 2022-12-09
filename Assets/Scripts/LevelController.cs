@@ -33,6 +33,17 @@ public class LevelController : MonoBehaviour
 
         File.WriteAllText(Application.persistentDataPath + "/unlockedLevels.save", jsonExport);
     }
+    public void UnlockAll()
+    {
+        bool[] toSave = new bool[12]
+        {
+            true,true,true,true,true,true,true,true,true,true,true,true
+        };
+        unlockedLevels levelsToSave = new unlockedLevels(toSave);
+        string jsonExport = JsonUtility.ToJson(levelsToSave);
+
+        File.WriteAllText(Application.persistentDataPath + "/unlockedLevels.save", jsonExport);
+    }
     public void Save(int index)
     {
         string jsonImport = File.ReadAllText(Application.persistentDataPath + "/unlockedLevels.save");
