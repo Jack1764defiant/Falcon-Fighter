@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6335492746768054070}
   - component: {fileID: 4528936482370214154}
   - component: {fileID: 3127369867264645806}
+  - component: {fileID: -3693236207560165749}
   m_Layer: 0
   m_Name: Enemy7
   m_TagString: Untagged
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6958116329377823816, guid: 36e3b8d95a6f5304c987980fce001a9a, type: 3}
+  projectilePrefabAlt: {fileID: 6958116329377823816, guid: 36e3b8d95a6f5304c987980fce001a9a, type: 3}
   Delay: 2
 --- !u!114 &3127369867264645806
 MonoBehaviour:
@@ -147,3 +149,23 @@ MonoBehaviour:
   reward: 20
   health: 1
   smallExplode: {fileID: 0}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
+--- !u!114 &-3693236207560165749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683486014554234569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a8a7c0f01bc4e6b99a4d8d8c2d4a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBound: 40
+  lowerBound: -15
+  topBound2: 21
+  lowerBound2: -21

@@ -14,18 +14,55 @@ public class DetectCollisions : MonoBehaviour
     public int reward = 10;
 	public int health = 1; 
 	public ParticleSystem smallExplode;
+	public GameObject shield;
+	public GameObject Heart1;
+	public GameObject Heart2;
+	public GameObject Heart3;
 
     // Start is called before the first frame update
     void Start()
     {
         scoreText = GameObject.FindWithTag("scoreText").GetComponent<TextMeshProUGUI>();
         Debug.Log(scoreText);
+		
+		if (enemyTag == "EnemyBullet"){
+			health = PlayerPrefs.GetInt( "Lives", 1);
+			Debug.Log(PlayerPrefs.GetInt( "Lives", 1));
+			if (health < 1){
+					health = 1;
+			}
+		}
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+		if (enemyTag == "EnemyBullet" && health > 3){
+			health = 3;
+		}
+		try{
+			if (health >= 3){
+				Heart1.SetActive(true);
+				Heart2.SetActive(true);
+				Heart3.SetActive(true);
+			}
+			else if (health == 2){
+				Heart1.SetActive(true);
+				Heart2.SetActive(true);
+				Heart3.SetActive(false);
+			}
+			else if (health == 1){
+				Heart1.SetActive(true);
+				Heart2.SetActive(false);
+				Heart3.SetActive(false);
+			}
+			else{
+				Heart1.SetActive(false);
+				Heart2.SetActive(false);
+				Heart3.SetActive(false);
+			}
+		}
+		catch{}
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -57,23 +94,41 @@ public class DetectCollisions : MonoBehaviour
 				
             }
 			else{
-				if (explode != null){
-					Instantiate(explode, transform.position, transform.rotation);
-				}
-				Destroy(other.gameObject);
-				if (enemyTag == "EnemyBullet"){
-					GetComponent<MeshRenderer>().enabled = false;
-					for( int i = 0; i < transform.childCount; ++i )
-					{
-						transform.GetChild(i).gameObject.SetActiveRecursively(false);
+				PlayerPrefs.SetInt( "Lives", health);
+				if (health <= 0){
+					if (explode != null){
+						Instantiate(explode, transform.position, transform.rotation);
 					}
-					explode = null;
-					GetComponent<PlayerController>().enabled = false;
-					Destroy(gameObject, 2);
+					Destroy(other.gameObject);
+					if (enemyTag == "EnemyBullet"){
+						GetComponent<MeshRenderer>().enabled = false;
+						for( int i = 0; i < transform.childCount; ++i )
+						{
+							transform.GetChild(i).gameObject.SetActiveRecursively(false);
+						}
+						explode = null;
+						GetComponent<PlayerController>().enabled = false;
+						Destroy(gameObject, 2);
+					}
 				}
+				else{
+					Instantiate(smallExplode, other.transform.position, other.transform.rotation);
+					Destroy(other.gameObject);
+					StartCoroutine(invuln());
+				}
+				
 			}
         }
     }
+	IEnumerator invuln(){
+		var enemyTag2 = enemyTag;
+		enemyTag = "";
+		shield.SetActive(true);
+		yield return new WaitForSeconds(2);
+		enemyTag = enemyTag2;
+		shield.SetActive(false);
+		
+	}
 	void OnDestroy(){
 		if (enemyTag == "EnemyBullet" && health <= 0){
 			score = 0;

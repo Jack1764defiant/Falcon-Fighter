@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2689198221058054939}
   - component: {fileID: 598825108437327272}
   - component: {fileID: 7329077234678305860}
+  - component: {fileID: 61861921765678243}
   m_Layer: 0
   m_Name: Rotor
   m_TagString: Untagged
@@ -81,6 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &61861921765678243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230566796695680396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416df1e0861ce6f4586a39a5e9ad226f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: y
+  speed: 25
 --- !u!1 &1292514650713525250
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +269,7 @@ GameObject:
   - component: {fileID: 5061624017155595129}
   - component: {fileID: 1735129992223708496}
   - component: {fileID: 6562799168893262298}
+  - component: {fileID: 8514229611531264610}
   m_Layer: 0
   m_Name: Rotor
   m_TagString: Untagged
@@ -324,6 +340,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8514229611531264610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633376537938699804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416df1e0861ce6f4586a39a5e9ad226f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: y
+  speed: 25
 --- !u!1 &1988156642772405133
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +544,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4286819413451948827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
@@ -522,7 +552,7 @@ Transform:
   - {fileID: 5166512193772860338}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!111 &8716293478352440467
 Animation:
   m_ObjectHideFlags: 0
@@ -530,7 +560,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4286819413451948827}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: -4506558747437489242, guid: 8394012a40e20d14e9158d2b74e12ee7, type: 3}
   m_Animations:
@@ -575,6 +605,10 @@ MonoBehaviour:
   reward: 200
   health: 6
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &4947089084703954690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,8 +622,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
   Delay: 1.5
   fireTimes: 2
+  sidesVSRandom: 1
 --- !u!65 &-2937172068537986092
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -878,6 +914,10 @@ MonoBehaviour:
   reward: 0
   health: 6
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &6860123477411145455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,6 +931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
   Delay: 1.75
   alwaysFire: 1
 --- !u!114 &2491293293488281464
@@ -906,6 +947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
   Delay: 3
   alwaysFire: 1
 --- !u!65 &2189789516186098924

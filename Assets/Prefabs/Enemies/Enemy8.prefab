@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: -1716905233566329110}
   - component: {fileID: -360136924693276162}
   - component: {fileID: 4739328469139136564}
+  - component: {fileID: -700670945108463925}
   m_Layer: 0
   m_Name: Enemy8
   m_TagString: Untagged
@@ -480,6 +481,10 @@ MonoBehaviour:
   reward: 20
   health: 1
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &7731306510668269302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
-  Delay: 1.75
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
+  Delay: 1.25
   alwaysFire: 0
 --- !u!114 &3097836212057877888
 MonoBehaviour:
@@ -508,6 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
   Delay: 1.5
 --- !u!65 &-1716905233566329110
 BoxCollider:
@@ -548,6 +555,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &-700670945108463925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146783985493565741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a8a7c0f01bc4e6b99a4d8d8c2d4a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBound: 40
+  lowerBound: -15
+  topBound2: 21
+  lowerBound2: -21
 --- !u!1 &5408765608082297538
 GameObject:
   m_ObjectHideFlags: 0

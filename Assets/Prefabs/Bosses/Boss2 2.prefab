@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
   Delay: 0.8
 --- !u!114 &6248315694516862260
 MonoBehaviour:
@@ -145,6 +146,10 @@ MonoBehaviour:
   reward: 150
   health: 10
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &1198143571020502948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,8 +163,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
-  Delay: 1.5
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
+  Delay: 1.35
   fireTimes: 2
+  sidesVSRandom: 1
 --- !u!114 &5779441673415619412
 MonoBehaviour:
   m_ObjectHideFlags: 0

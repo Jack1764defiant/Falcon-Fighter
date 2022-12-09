@@ -9,6 +9,8 @@ public class Summon : MonoBehaviour
     private float spawnRangeX = 10;
     public float spawnPosZ = 30;
     public float spawnInterval = 1.5f;
+	public int summonTimes = 1;
+    public float rotation = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +28,12 @@ public class Summon : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnInterval);
-            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-            int animalIndex = Random.Range(0, planePrefabs1.Length);
-            Instantiate(planePrefabs1[animalIndex], spawnPos, planePrefabs1[animalIndex].transform.rotation);
+			for(int i = 0; i < summonTimes; i++){
+				Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+				int animalIndex = Random.Range(0, planePrefabs1.Length);
+				var SummonedPrefab = Instantiate(planePrefabs1[animalIndex], spawnPos, planePrefabs1[animalIndex].transform.rotation);
+                SummonedPrefab.transform.Rotate(0, rotation, 0);
+			}
         }
     }
 }

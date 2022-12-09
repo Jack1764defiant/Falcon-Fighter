@@ -7,10 +7,9 @@ public class MoveAndHome : MonoBehaviour
     public float speed = 10.0f;
     public float exploSize = 1.25f;
     public float Damage = 1;
-    public ParticleSystem explode;
     private Transform target;
     public float turnSpeed = 0.1f;
-    private float focusDistance = 5;
+    public float focusDistance = 5;
     private bool isLookingAtObject = true;
     public ParticleSystem lightBlue;
     public ParticleSystem Blue;
@@ -44,8 +43,11 @@ public class MoveAndHome : MonoBehaviour
             }
             else
             {
-                lightBlue.gameObject.SetActive(true);
-                Blue.gameObject.SetActive(false);
+				try{
+					lightBlue.gameObject.SetActive(true);
+					Blue.gameObject.SetActive(false);
+				}
+				catch{}
             }
         }
         else
@@ -55,26 +57,6 @@ public class MoveAndHome : MonoBehaviour
             Blue.gameObject.SetActive(false);
         }
     }
-    void ExplosionDamage(float radius)
-    {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius);
-        foreach (var hitCollider in hitColliders)
-        {
-			if (hitCollider.tag == "Player")
-			{
-				hitCollider.gameObject.SendMessage("AddDamage", Damage, SendMessageOptions.DontRequireReceiver);
-			}
-        }
-    }
-    /*void OnTriggerEnter(Collider hitCollider)
-    {
-		if (hitCollider.tag == "Player")
-		{
-			Instantiate(explode, transform.position, Quaternion.identity);
-			ExplosionDamage(exploSize);
-			Destroy(gameObject);
-		}
-    }*/
     void lockOn()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;

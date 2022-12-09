@@ -11,18 +11,22 @@ public class SpawnManager : MonoBehaviour
     public GameObject boss1;
 	public GameObject boss2;
 	public GameObject boss3;
-    private float spawnRangeX = 10;
+    public float spawnRangeX = 10;
     public float spawnPosZ = 30;
     private float startDelay = 2;
     public float spawnInterval = 1.5f;
     private float waveCount = 0;
 	public int wavesBeforeBoss = 25;
 	public float waveTimeReduce = 0.5f;
+	private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         //InvokeRepeating("SpawnRandom", startDelay, spawnInterval);
         StartCoroutine(Spawn());
+		player = GameObject.FindWithTag("Player");
+		int curScene = SceneManager.GetActiveScene().buildIndex;
+		PlayerPrefs.SetInt( "curScene", curScene);
     }
 
     // Update is called once per frame
@@ -49,6 +53,8 @@ public class SpawnManager : MonoBehaviour
 		while (iboss1 != null){
 			yield return null;
 		}
+		player.GetComponent<DetectCollisions>().health += 1;
+		PlayerPrefs.SetInt( "Lives", player.GetComponent<DetectCollisions>().health);
 		spawnInterval -= waveTimeReduce;
 		while (waveCount < wavesBeforeBoss*2)
 		{
@@ -67,6 +73,8 @@ public class SpawnManager : MonoBehaviour
 		while (iboss2 != null){
 			yield return null; 
 		}
+		player.GetComponent<DetectCollisions>().health += 1;
+		PlayerPrefs.SetInt( "Lives", player.GetComponent<DetectCollisions>().health);
 		spawnInterval -= waveTimeReduce;
 		while (waveCount < wavesBeforeBoss*3)
 		{
@@ -84,7 +92,10 @@ public class SpawnManager : MonoBehaviour
 		while (iboss3 != null){
 			yield return null; 
 		}
-		yield return new WaitForSeconds(1.5f); 
+		player.GetComponent<DetectCollisions>().health += 1;
+		PlayerPrefs.SetInt( "Lives", player.GetComponent<DetectCollisions>().health);
+		yield return new WaitForSeconds(1.5f);
+		LevelController.instance.Save(SceneManager.GetActiveScene().buildIndex-1);
 		SceneManager.LoadScene(1);
     }
 }
