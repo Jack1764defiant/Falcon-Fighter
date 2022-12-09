@@ -539,8 +539,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bosses:
-  - {fileID: 5593331879653219074, guid: 7d5b0ab4ae8dc554cb98f2c3f08f7fdd, type: 3}
   - {fileID: 196804, guid: a915a3285fc7e49638568c2e6c584872, type: 3}
+  - {fileID: 5593331879653219074, guid: 7d5b0ab4ae8dc554cb98f2c3f08f7fdd, type: 3}
   - {fileID: 1471574114191719901, guid: 607ab894c6cc1b747b45c2894451138f, type: 3}
   - {fileID: 4286819413451948827, guid: da59ca866f2409d4cb5e2de2f4c2e6c5, type: 3}
   - {fileID: 5146783985493565741, guid: d116674972fa0344b9755dd9d620ee53, type: 3}

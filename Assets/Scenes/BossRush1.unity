@@ -1071,8 +1071,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bosses:
-  - {fileID: 5593331879653219074, guid: de0332fedf5da2f409a5fb079c3fd316, type: 3}
   - {fileID: 196804, guid: f84d61e45af91b942ae3007dc05675a2, type: 3}
+  - {fileID: 5593331879653219074, guid: de0332fedf5da2f409a5fb079c3fd316, type: 3}
   - {fileID: 1471574114191719901, guid: f8c8270cff9e7d34983c67ca7db0bbc8, type: 3}
   - {fileID: 4286819413451948827, guid: e78cfb5c34d625441981e33c823b2d35, type: 3}
   - {fileID: 5146783985493565741, guid: 871c3ac1449a97446bd578fed2716f91, type: 3}
@@ -1082,8 +1082,6 @@ MonoBehaviour:
   - {fileID: 3306728923582291207, guid: 25221e10d7b11c74eb5ff31d8d74d644, type: 3}
   spawnRangeX: 10
   spawnPosZ: 29
-  spawnInterval: 2.75
-  waveTimeReduce: 0.2
 --- !u!1001 &952337090
 PrefabInstance:
   m_ObjectHideFlags: 0
