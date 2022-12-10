@@ -115,23 +115,11 @@ public class StreamFire : MonoBehaviour
 		}
         else
         {
-			int angle = Random.Range(135, 215);
-			yield return new WaitForSeconds(Delay);
-			var bullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-			bullet.transform.Rotate(0, angle, 0);
-
-			for (int i = 0; i < fireTimes - 1; i++)
+			if (SceneManager.GetActiveScene().buildIndex != 7 && SceneManager.GetActiveScene().buildIndex != 12)
 			{
-				yield return new WaitForSeconds(0.1f);
-				bullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-				bullet.transform.Rotate(0, angle, 0);
-			}
-
-			while (true)
-			{
-				angle = Random.Range(135, 215);
+				int angle = Random.Range(135, 215);
 				yield return new WaitForSeconds(Delay);
-				bullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+				var bullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 				bullet.transform.Rotate(0, angle, 0);
 
 				for (int i = 0; i < fireTimes - 1; i++)
@@ -141,6 +129,51 @@ public class StreamFire : MonoBehaviour
 					bullet.transform.Rotate(0, angle, 0);
 				}
 
+				while (true)
+				{
+					angle = Random.Range(135, 215);
+					yield return new WaitForSeconds(Delay);
+					bullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+					bullet.transform.Rotate(0, angle, 0);
+
+					for (int i = 0; i < fireTimes - 1; i++)
+					{
+						yield return new WaitForSeconds(0.1f);
+						bullet = Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+						bullet.transform.Rotate(0, angle, 0);
+					}
+
+				}
+			}
+            else
+            {
+				int angle = Random.Range(135, 215);
+				yield return new WaitForSeconds(Delay);
+				var bullet = Instantiate(projectilePrefabAlt, transform.position, projectilePrefabAlt.transform.rotation);
+				bullet.transform.Rotate(0, angle, 0);
+
+				for (int i = 0; i < fireTimes - 1; i++)
+				{
+					yield return new WaitForSeconds(0.1f);
+					bullet = Instantiate(projectilePrefabAlt, transform.position, projectilePrefabAlt.transform.rotation);
+					bullet.transform.Rotate(0, angle, 0);
+				}
+
+				while (true)
+				{
+					angle = Random.Range(135, 215);
+					yield return new WaitForSeconds(Delay);
+					bullet = Instantiate(projectilePrefabAlt, transform.position, projectilePrefabAlt.transform.rotation);
+					bullet.transform.Rotate(0, angle, 0);
+
+					for (int i = 0; i < fireTimes - 1; i++)
+					{
+						yield return new WaitForSeconds(0.1f);
+						bullet = Instantiate(projectilePrefabAlt, transform.position, projectilePrefabAlt.transform.rotation);
+						bullet.transform.Rotate(0, angle, 0);
+					}
+
+				}
 			}
 		}
     }

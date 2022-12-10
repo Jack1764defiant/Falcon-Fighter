@@ -569,7 +569,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
   projectilePrefabAlt: {fileID: 0}
   Delay: 2
-  alwaysFire: 0
+  alwaysFire: 1
 --- !u!1 &3070669278718145622
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
   projectilePrefabAlt: {fileID: 0}
   Delay: 2
-  alwaysFire: 0
+  alwaysFire: 1
 --- !u!1 &5146783985493565741
 GameObject:
   m_ObjectHideFlags: 0

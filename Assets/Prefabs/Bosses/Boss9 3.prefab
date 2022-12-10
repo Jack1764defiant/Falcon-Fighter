@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: -3542242582750220348}
   - component: {fileID: -4560610548004124772}
   - component: {fileID: 1510671506831397553}
+  - component: {fileID: 6562347725544412805}
   - component: {fileID: 4134286981100036409}
   - component: {fileID: 7145627011413087207}
   m_Layer: 0
@@ -315,7 +316,7 @@ MonoBehaviour:
   explode: {fileID: 19800006, guid: 459ca3595cbdbf342b2d7c2ffcfd2043, type: 3}
   scoreText: {fileID: 0}
   reward: 100
-  health: 15
+  health: 20
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
   shield: {fileID: 0}
   Heart1: {fileID: 0}
@@ -338,6 +339,7 @@ MonoBehaviour:
   spawnPosZ: 30
   spawnInterval: 1.5
   summonTimes: 1
+  rotation: 0
 --- !u!114 &1510671506831397553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +354,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 100000, guid: 8686dbab47d777d4287f844c81b2edb6, type: 3}
   projectilePrefabAlt: {fileID: 100000, guid: 8686dbab47d777d4287f844c81b2edb6, type: 3}
-  Delay: 1.25
+  Delay: 1.5
+--- !u!114 &6562347725544412805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306728923582291207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30c971e586bf5447a78763630779422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 100000, guid: 8686dbab47d777d4287f844c81b2edb6, type: 3}
+  projectilePrefabAlt: {fileID: 100000, guid: 8686dbab47d777d4287f844c81b2edb6, type: 3}
+  Delay: 1.8
+  alwaysFire: 1
 --- !u!65 &4134286981100036409
 BoxCollider:
   m_ObjectHideFlags: 0

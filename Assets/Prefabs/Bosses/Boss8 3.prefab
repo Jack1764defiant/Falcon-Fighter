@@ -15147,7 +15147,7 @@ MonoBehaviour:
   explode: {fileID: 19800006, guid: 459ca3595cbdbf342b2d7c2ffcfd2043, type: 3}
   scoreText: {fileID: 0}
   reward: 100
-  health: 15
+  health: 20
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
   shield: {fileID: 0}
   Heart1: {fileID: 0}

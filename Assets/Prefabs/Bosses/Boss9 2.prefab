@@ -315,7 +315,7 @@ MonoBehaviour:
   explode: {fileID: 19800006, guid: 459ca3595cbdbf342b2d7c2ffcfd2043, type: 3}
   scoreText: {fileID: 0}
   reward: 100
-  health: 12
+  health: 16
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
   shield: {fileID: 0}
   Heart1: {fileID: 0}
@@ -338,6 +338,7 @@ MonoBehaviour:
   spawnPosZ: 30
   spawnInterval: 1.5
   summonTimes: 1
+  rotation: 0
 --- !u!114 &1510671506831397553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 100000, guid: 8686dbab47d777d4287f844c81b2edb6, type: 3}
   projectilePrefabAlt: {fileID: 100000, guid: 8686dbab47d777d4287f844c81b2edb6, type: 3}
-  Delay: 1.1
+  Delay: 1
 --- !u!65 &4134286981100036409
 BoxCollider:
   m_ObjectHideFlags: 0
