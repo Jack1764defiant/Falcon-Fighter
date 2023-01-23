@@ -751,8 +751,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
   projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
-  Delay: 1.5
+  Delay: 1.25
   fireTimes: 1
+  sidesVSRandom: 1
 --- !u!65 &1799311765035103427
 BoxCollider:
   m_ObjectHideFlags: 0

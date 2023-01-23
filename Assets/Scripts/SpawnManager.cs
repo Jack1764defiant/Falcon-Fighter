@@ -27,10 +27,14 @@ public class SpawnManager : MonoBehaviour
 		player = GameObject.FindWithTag("Player");
 		int curScene = SceneManager.GetActiveScene().buildIndex;
 		PlayerPrefs.SetInt( "curScene", curScene);
-    }
+#if (UNITY_ANDROID || UNITY_WP_8_1 || UNITY_IOS) && !UNITY_EDITOR
+            wavesBeforeBoss = Mathf.FloorToInt(wavesBeforeBoss*1.5f);
+            spawnInterval = spawnInterval*2f/3f;
+#endif
+	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
 
     }
@@ -38,8 +42,8 @@ public class SpawnManager : MonoBehaviour
     {
         while (waveCount < wavesBeforeBoss)
         {
-            yield return new WaitForSeconds(spawnInterval);
-            waveCount++;
+			yield return new WaitForSeconds(spawnInterval);
+			waveCount++;
             //if (spawnInterval > 1)
                 //spawnInterval -= 0.1f;
             //Debug.Log("spawn"+ spawnInterval);

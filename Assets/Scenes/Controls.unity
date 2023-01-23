@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -170}
   m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &495431035
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.98769885, g: 1, b: 0.9779874, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -879,7 +879,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 37
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -890,8 +890,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "KEYBOARD:\n\t> MOVEMENT: \n\t   ASWD/ARROW KEYS\n\t> FIRING\n\t   SPACEBAR\n\nGAMEPAD\n\t>
-    MOVEMENT: \n\t   D-PAD\n\t> FIRING\n\t   A"
+  m_Text: "KEYBOARD:\n\t> MOVEMENT: \n\t   ASWD/ARROW KEYS\n\t> WEAPONS\n\t   SPACEBAR\n\nGAMEPAD\n\t>
+    MOVEMENT: \n\t   D-PAD\n\t> WEAPONS\n\t   'A' BUTTON\n\nMOBILE/TABLET\n\t> MOVEMENT\n\t   
+    DRAG FIGHTER\n\t> WEAPONS\n\t    PRESS RED BUTTON"
 --- !u!222 &1998842446
 CanvasRenderer:
   m_ObjectHideFlags: 0

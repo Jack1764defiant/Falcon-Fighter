@@ -16,6 +16,9 @@ public class MoveAndHome : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+#if (UNITY_ANDROID || UNITY_WP_8_1 || UNITY_IOS) && !UNITY_EDITOR
+        turnSpeed *= 1.65f;
+#endif
         lockOn();
 		Destroy(gameObject, 5f);
     }

@@ -8,6 +8,7 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - scoreText
+  - FireMobile
   layers:
   - Default
   - TransparentFX

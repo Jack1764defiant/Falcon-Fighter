@@ -22,18 +22,17 @@ public class EndlessManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //InvokeRepeating("SpawnRandom", startDelay, spawnInterval);
-        StartCoroutine(Spawn());
+#if (UNITY_ANDROID || UNITY_WP_8_1 || UNITY_IOS) && !UNITY_EDITOR
+            wavesBeforeBoss = Mathf.FloorToInt(wavesBeforeBoss*1.5f);
+            spawnInterval = spawnInterval*2f/3f;
+#endif
+		//InvokeRepeating("SpawnRandom", startDelay, spawnInterval);
+		StartCoroutine(Spawn());
 		player = GameObject.FindWithTag("Player");
 		int curScene = SceneManager.GetActiveScene().buildIndex;
 		PlayerPrefs.SetInt( "curScene", curScene);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 	IEnumerator Spawn()
 	{
 		while (true)

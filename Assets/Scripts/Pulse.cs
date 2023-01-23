@@ -5,6 +5,8 @@ using UnityEngine;
 public class Pulse : MonoBehaviour
 {
 	public float pulseTime = 0.25f;
+	public Material mineMaterialDark;
+	public Material mineMaterialRed;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +21,13 @@ public class Pulse : MonoBehaviour
 	IEnumerator pulse(){
 		while (true){
 			yield return new WaitForSeconds(pulseTime);
-			gameObject.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
-			gameObject.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red*3);
+			//gameObject.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+			//gameObject.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.red*3);
+			GetComponent<Renderer>().material = mineMaterialRed;
 			yield return new WaitForSeconds(pulseTime);
-			gameObject.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.black);
-			gameObject.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+			//gameObject.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.black);
+			//gameObject.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+			GetComponent<Renderer>().material = mineMaterialDark;
 			
 		}
 		

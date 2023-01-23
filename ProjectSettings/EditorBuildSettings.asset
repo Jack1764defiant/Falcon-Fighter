@@ -27,14 +27,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Game5.unity
     guid: d7e12cbae1810254f836b28a43548121
   - enabled: 1
-    path: Assets/Scenes/Game6.unity
-    guid: 8df1570e37f6fba438320df3432ce0d4
+    path: Assets/Scenes/Game6Backup.unity
+    guid: ddf0b03699d805b46b3367aaf43b5070
   - enabled: 1
     path: Assets/Scenes/Game7.unity
     guid: 3b3af48ddf482d2489eadf281b4f5b86
   - enabled: 1
-    path: Assets/Scenes/Game8.unity
-    guid: e931a0f694f15db40a64756c8afa29fe
+    path: Assets/Scenes/Game8Backup.unity
+    guid: 70046c6f3f64b0d4a8af561e96394990
   - enabled: 1
     path: Assets/Scenes/Game9.unity
     guid: 61625ac643cb73645a322cab3838c84f
@@ -42,8 +42,8 @@ EditorBuildSettings:
     path: Assets/Scenes/BossRush1.unity
     guid: 1aa0ac4a6ebaf3f40ab8c625ebcad81b
   - enabled: 1
-    path: Assets/Scenes/BossRush2.unity
-    guid: 19837f5cc1acaf1448b24f9a6c1a9dd2
+    path: Assets/Scenes/BossRush2Backup.unity
+    guid: 09798cb7d57fa1e439c1e4f3e8098ac5
   - enabled: 1
     path: Assets/Scenes/BossRush3.unity
     guid: a22e78126785a0445a08c78109834f4e
@@ -53,5 +53,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: 884e4ea103eb0c84c9fe8110afd53ad6
+  - enabled: 0
+    path: Assets/Scenes/Game6.unity
+    guid: 8df1570e37f6fba438320df3432ce0d4
+  - enabled: 0
+    path: Assets/Scenes/Game8.unity
+    guid: e931a0f694f15db40a64756c8afa29fe
+  - enabled: 0
+    path: Assets/Scenes/BossRush2.unity
+    guid: 19837f5cc1acaf1448b24f9a6c1a9dd2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6d92f99cd2482174495ddd9c06a4844e, type: 2}

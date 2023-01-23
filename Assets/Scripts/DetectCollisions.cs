@@ -18,9 +18,10 @@ public class DetectCollisions : MonoBehaviour
 	public GameObject Heart1;
 	public GameObject Heart2;
 	public GameObject Heart3;
+	int inDeathMode;
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
         scoreText = GameObject.FindWithTag("scoreText").GetComponent<TextMeshProUGUI>();
         Debug.Log(scoreText);
@@ -32,7 +33,8 @@ public class DetectCollisions : MonoBehaviour
 					health = 1;
 			}
 		}
-    }
+		inDeathMode = PlayerPrefs.GetInt("DeathMode", 0);
+	}
 
     // Update is called once per frame
     void Update()
@@ -57,6 +59,35 @@ public class DetectCollisions : MonoBehaviour
 				Heart3.SetActive(false);
 			}
 			else{
+				Heart1.SetActive(false);
+				Heart2.SetActive(false);
+				Heart3.SetActive(false);
+			}
+			if (health > 1 && inDeathMode == 1)
+			{
+				health = 1;
+				PlayerPrefs.SetInt("Lives", health);
+			}
+			if (health >= 3)
+			{
+				Heart1.SetActive(true);
+				Heart2.SetActive(true);
+				Heart3.SetActive(true);
+			}
+			else if (health == 2)
+			{
+				Heart1.SetActive(true);
+				Heart2.SetActive(true);
+				Heart3.SetActive(false);
+			}
+			else if (health == 1)
+			{
+				Heart1.SetActive(true);
+				Heart2.SetActive(false);
+				Heart3.SetActive(false);
+			}
+			else
+			{
 				Heart1.SetActive(false);
 				Heart2.SetActive(false);
 				Heart3.SetActive(false);
@@ -94,6 +125,11 @@ public class DetectCollisions : MonoBehaviour
 				
             }
 			else{
+				if (health > 1 && inDeathMode == 1)
+                {
+					health = 1;
+					PlayerPrefs.SetInt("Lives", health);
+				}
 				PlayerPrefs.SetInt( "Lives", health);
 				if (health <= 0){
 					if (explode != null){
