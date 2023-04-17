@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 
 public class LevelController : MonoBehaviour
@@ -9,6 +10,15 @@ public class LevelController : MonoBehaviour
     bool[] unlocked = new bool[12];
 
     public static LevelController instance;
+
+    void Start()
+    {
+        Screen.SetResolution(700, 1000, false);
+        if (PlayerPrefs.GetInt("HasLoadedBefore", 0) == 0)
+        {
+            SceneManager.LoadScene("Welcome");
+        }
+    }
 
     // Start is called before the first frame update
     void Awake()
@@ -75,6 +85,16 @@ public class LevelController : MonoBehaviour
         string jsonExport = JsonUtility.ToJson(levelsToSave);
 
         File.WriteAllText(Application.persistentDataPath + "/unlockedLevels.save", jsonExport);
+    }
+
+    public void About()
+    {
+        SceneManager.LoadScene("Welcome");
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 
 }

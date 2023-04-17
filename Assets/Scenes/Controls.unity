@@ -879,7 +879,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 37
+    m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -890,9 +890,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "KEYBOARD:\n\t> MOVEMENT: \n\t   ASWD/ARROW KEYS\n\t> WEAPONS\n\t   SPACEBAR\n\nGAMEPAD\n\t>
-    MOVEMENT: \n\t   D-PAD\n\t> WEAPONS\n\t   'A' BUTTON\n\nMOBILE/TABLET\n\t> MOVEMENT\n\t   
-    DRAG FIGHTER\n\t> WEAPONS\n\t    PRESS RED BUTTON"
+  m_Text: "KEYBOARD:\n\t> MOVEMENT: \n\t   ASWD/ARROW KEYS\n\t> WEAPONS:\n\t   SPACEBAR\n\t>
+    PAUSE:\n\t    P\n\t> QUIT:\n\t    ESC\n\nGAMEPAD\n\t> MOVEMENT: \n\t   D-PAD\n\t>
+    WEAPONS\n\t   'A' BUTTON\n\nMOBILE/TABLET\n\t> MOVEMENT:\n\t    DRAG FIGHTER\n\t>
+    WEAPONS:\n\t    PRESS RED BUTTON\n\t> PAUSE\n\t    PAUSE BUTTON"
 --- !u!222 &1998842446
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -643,6 +643,10 @@ MonoBehaviour:
   reward: 100
   health: 1
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &333118360749599488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 5033392481626314052, guid: 7965f11e44cd0854d99b3da1207c5dd2, type: 3}
   Delay: 1
 --- !u!65 &4216012952457300702
 BoxCollider:
@@ -808,6 +813,10 @@ MonoBehaviour:
   reward: 20
   health: 1
   smallExplode: {fileID: 0}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &8607174615232621969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,6 +830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 0}
   Delay: 2
 --- !u!65 &5045310061943466143
 BoxCollider:
@@ -954,6 +964,10 @@ MonoBehaviour:
   reward: 20
   health: 1
   smallExplode: {fileID: 0}
+  shield: {fileID: 0}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &64678482440361619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,6 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5033392481626314052, guid: dcfe9c5c1253c6248a5cf1ec8efe6456, type: 3}
+  projectilePrefabAlt: {fileID: 0}
   Delay: 2
 --- !u!65 &1983111302849338527
 BoxCollider:
