@@ -159,12 +159,33 @@ public class DetectCollisions : MonoBehaviour
 	IEnumerator invuln(){
 		var enemyTag2 = enemyTag;
 		enemyTag = "";
-		shield.SetActive(true);
-		yield return new WaitForSeconds(2);
+		Color tempColor = GetComponent<Renderer>().material.color;
+        tempColor.a = 0.4f;
+        GetComponent<Renderer>().material.color = tempColor;
+		foreach (Transform child in transform)
+		{
+			try
+			{
+				child.gameObject.GetComponent<Renderer>().material.color = tempColor;
+			}
+			catch { }
+        }
+        //shield.SetActive(true);
+        yield return new WaitForSeconds(2);
 		enemyTag = enemyTag2;
-		shield.SetActive(false);
-		
-	}
+        tempColor.a = 1f;
+        GetComponent<Renderer>().material.color = tempColor;
+        foreach (Transform child in transform)
+        {
+			try
+			{
+				child.gameObject.GetComponent<Renderer>().material.color = tempColor;
+			}
+			catch { }
+        }
+        //shield.SetActive(false);
+
+    }
 	void OnDestroy(){
 		if (enemyTag == "EnemyBullet" && health <= 0){
 			score = 0;
