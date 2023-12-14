@@ -23,6 +23,7 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
         string jsonImport;
         //Save();
         try
@@ -47,7 +48,6 @@ public class LevelController : MonoBehaviour
         {
             levels[i].isUnlocked = unlocked[i];
         }
-        instance = this;
     }
     public void Reset()
     {

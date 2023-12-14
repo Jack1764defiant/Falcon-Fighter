@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public float horizontalInput;
-    public float verticalInput;
+    [HideInInspector]public float horizontalInput;
+    [HideInInspector] public float verticalInput;
     public float speed = 10.0f;
     public float xRange = 10;
     public float zRange = 10;
@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
     public GameObject FireButtonMobile;
     private Button mobileFireButton;
+    private bool canFire = true;
+    private float FireDelay = 0.25f;
 
     private float maxPickingDistance = 10000;// increase if needed, depending on your scene size
 
@@ -117,11 +119,16 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
             }
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire2"))
+            if (Input.GetKey(KeyCode.Space) || Input.GetButton("Fire2"))
             {
-                // Launch a projectile from the file
-                Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-            }
+                if (canFire)
+                {
+                    // Launch a projectile from the file
+                    Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+                    canFire = false;
+                    Invoke("Reload", FireDelay);
+                }
+            }   
 #endif
 
     }
@@ -166,8 +173,18 @@ public class PlayerController : MonoBehaviour
 
     public void MobileFire()
     {
-        Debug.Log(1);
-        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        if (canFire)
+        {
+            Debug.Log(1);
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            canFire = false;
+            Invoke("Reload", FireDelay);
+        }
+    }
+
+    public void Reload()
+    {
+        canFire = true;
     }
 
 }

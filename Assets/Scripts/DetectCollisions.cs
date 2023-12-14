@@ -14,6 +14,7 @@ public class DetectCollisions : MonoBehaviour
     public int reward = 10;
 	public int health = 1; 
 	public ParticleSystem smallExplode;
+	public GameObject onDeath;
 	public GameObject shield;
 	public GameObject Heart1;
 	public GameObject Heart2;
@@ -24,11 +25,9 @@ public class DetectCollisions : MonoBehaviour
 	void Start()
     {
         scoreText = GameObject.FindWithTag("scoreText").GetComponent<TextMeshProUGUI>();
-        Debug.Log(scoreText);
 		
 		if (enemyTag == "EnemyBullet"){
 			health = PlayerPrefs.GetInt( "Lives", 1);
-			Debug.Log(PlayerPrefs.GetInt( "Lives", 1));
 			if (health < 1){
 					health = 1;
 			}
@@ -116,6 +115,8 @@ public class DetectCollisions : MonoBehaviour
 					}
 					catch{}
 					Instantiate(explode, transform.position, transform.rotation);
+					if (onDeath != null)
+						Instantiate(onDeath, transform.position, transform.rotation, transform.parent);
 					Destroy(gameObject);
 				}
 				else{
@@ -135,7 +136,9 @@ public class DetectCollisions : MonoBehaviour
 					if (explode != null){
 						Instantiate(explode, transform.position, transform.rotation);
 					}
-					Destroy(other.gameObject);
+                    if (onDeath != null)
+                        Instantiate(onDeath, transform.position, transform.rotation, transform.parent);
+                    Destroy(other.gameObject);
 					if (enemyTag == "EnemyBullet"){
 						GetComponent<MeshRenderer>().enabled = false;
 						for( int i = 0; i < transform.childCount; ++i )
@@ -143,8 +146,9 @@ public class DetectCollisions : MonoBehaviour
 							transform.GetChild(i).gameObject.SetActiveRecursively(false);
 						}
 						explode = null;
+						onDeath = null;
 						GetComponent<PlayerController>().enabled = false;
-						Destroy(gameObject, 2);
+						Destroy(gameObject, 0.1f);
 					}
 				}
 				else{

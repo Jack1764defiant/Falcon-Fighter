@@ -11,18 +11,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/You Win.unity
     guid: 17254a7d04955a24a8bbf58242cef7f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game1.unity
     guid: f0196d95ff9244ffaa65879ba7824fd4
+  - enabled: 1
+    path: Assets/Scenes/New Game1.unity
+    guid: 390f892cdffc11a4980f64f59f52911d
   - enabled: 1
     path: Assets/Scenes/Game2.unity
     guid: 1baf7648bc246994ab88b4a64c31206b
   - enabled: 1
     path: Assets/Scenes/Game3.unity
     guid: 843b70b507bcec0458719fbbb19ca21a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game4.unity
     guid: 79e969a2b61d6384bae0d3e5dc1b569b
+  - enabled: 1
+    path: Assets/Scenes/New Game4.unity
+    guid: 87e9e381a6e02d04194792b415e44ce5
   - enabled: 1
     path: Assets/Scenes/Game5.unity
     guid: d7e12cbae1810254f836b28a43548121
@@ -33,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game7.unity
     guid: 3b3af48ddf482d2489eadf281b4f5b86
   - enabled: 1
+    path: Assets/Scenes/New Game8.unity
+    guid: ed4ac25364e0cd6478b66f7d4292654f
+  - enabled: 0
     path: Assets/Scenes/Game8Backup.unity
     guid: 70046c6f3f64b0d4a8af561e96394990
   - enabled: 1
@@ -59,14 +68,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 833b15bd85eebbd41808434532603ebd
-  - enabled: 0
-    path: Assets/Scenes/Game6.unity
-    guid: 8df1570e37f6fba438320df3432ce0d4
-  - enabled: 0
-    path: Assets/Scenes/Game8.unity
-    guid: e931a0f694f15db40a64756c8afa29fe
-  - enabled: 0
-    path: Assets/Scenes/BossRush2.unity
-    guid: 19837f5cc1acaf1448b24f9a6c1a9dd2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6d92f99cd2482174495ddd9c06a4844e, type: 2}

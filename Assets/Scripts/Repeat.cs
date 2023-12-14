@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Repeat : MonoBehaviour
 {
-    public float topBound = 30;
     public float lowerBound = -10;
     public Vector3 returnPos;
     // Start is called before the first frame update

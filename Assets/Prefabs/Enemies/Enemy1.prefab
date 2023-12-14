@@ -27,13 +27,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3, y: 1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8824732537789806712}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1825097143039900173
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -43,6 +44,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -133,11 +135,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!1 &5451181560499297643
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,13 +170,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.3, y: 1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8824732537789806712}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &6516595627996599313
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -181,6 +187,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -271,11 +278,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!1 &5593331879653219074
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +318,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 10.42}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8824732537789773618}
   m_Father: {fileID: 0}
@@ -373,6 +384,7 @@ MonoBehaviour:
   reward: 10
   health: 1
   smallExplode: {fileID: 19800006, guid: 2e7e92bc7175b744ea40878dedfa79e4, type: 3}
+  onDeath: {fileID: 0}
   shield: {fileID: 0}
   Heart1: {fileID: 0}
   Heart2: {fileID: 0}
@@ -432,13 +444,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.3, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8824732537789806712}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &3867349711587224681
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -448,6 +461,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -538,11 +552,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!1 &7655181229378763252
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,13 +587,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8824732537789806712}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &8333620574165218331
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -586,6 +604,7 @@ TrailRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -676,16 +695,20 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!1001 &8824732537789968802
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 5593331879653600558}
     m_Modifications:
     - target: {fileID: 123344, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
@@ -744,21 +767,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2365752, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366858, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 494042, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7163043380567903726}
+    - targetCorrespondingSourceObject: {fileID: 494042, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6270756499879589968}
+    - targetCorrespondingSourceObject: {fileID: 494042, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4272625336272050771}
+    - targetCorrespondingSourceObject: {fileID: 494042, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7252250260045760516}
   m_SourcePrefab: {fileID: 100100000, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
 --- !u!4 &8824732537789773618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 460432, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
   m_PrefabInstance: {fileID: 8824732537789968802}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8824732537790074494 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 163804, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
-  m_PrefabInstance: {fileID: 8824732537789968802}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8824732537789806712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 494042, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
+  m_PrefabInstance: {fileID: 8824732537789968802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8824732537790074494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 163804, guid: a94251e18a506514f84c5f3f8d686bc2, type: 3}
   m_PrefabInstance: {fileID: 8824732537789968802}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2018351011017363235
