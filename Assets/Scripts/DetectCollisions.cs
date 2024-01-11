@@ -24,7 +24,7 @@ public class DetectCollisions : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-        scoreText = GameObject.FindWithTag("scoreText").GetComponent<TextMeshProUGUI>();
+        //scoreText = GameObject.FindWithTag("scoreText").GetComponent<TextMeshProUGUI>();
 		
 		if (enemyTag == "EnemyBullet"){
 			health = PlayerPrefs.GetInt( "Lives", 1);
@@ -103,7 +103,7 @@ public class DetectCollisions : MonoBehaviour
 				
 				if (health <= 0){
 					Destroy(other.gameObject);
-					score += reward;
+					/*score += reward;
 					//Debug.Log("Score");
 					string zeros = "";
 					for (int i = 0; i < (4-score.ToString().Length); i++)
@@ -113,7 +113,7 @@ public class DetectCollisions : MonoBehaviour
 					try{
 						scoreText.text = "SCORE: " + zeros + score;
 					}
-					catch{}
+					catch{}*/
 					Instantiate(explode, transform.position, transform.rotation);
 					if (onDeath != null)
 						Instantiate(onDeath, transform.position, transform.rotation, transform.parent);
@@ -163,28 +163,30 @@ public class DetectCollisions : MonoBehaviour
 	IEnumerator invuln(){
 		var enemyTag2 = enemyTag;
 		enemyTag = "";
-		Color tempColor = GetComponent<Renderer>().material.color;
-        tempColor.a = 0.4f;
-        GetComponent<Renderer>().material.color = tempColor;
-		foreach (Transform child in transform)
+        GetComponent<Renderer>().material.color = Color.red;
+        Material mymat = GetComponent<Renderer>().material;
+        mymat.SetColor("_EmissionColor", Color.red);
+        foreach (Transform child in transform)
 		{
 			try
 			{
-				child.gameObject.GetComponent<Renderer>().material.color = tempColor;
-			}
+				child.gameObject.GetComponent<Renderer>().material.color = Color.red;
+                child.gameObject.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.red);
+            }
 			catch { }
         }
         //shield.SetActive(true);
         yield return new WaitForSeconds(2);
 		enemyTag = enemyTag2;
-        tempColor.a = 1f;
-        GetComponent<Renderer>().material.color = tempColor;
+        GetComponent<Renderer>().material.color = Color.white;
+        mymat.SetColor("_EmissionColor", Color.grey);
         foreach (Transform child in transform)
         {
 			try
 			{
-				child.gameObject.GetComponent<Renderer>().material.color = tempColor;
-			}
+				child.gameObject.GetComponent<Renderer>().material.color = Color.white;
+                child.gameObject.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.grey);
+            }
 			catch { }
         }
         //shield.SetActive(false);
@@ -193,8 +195,8 @@ public class DetectCollisions : MonoBehaviour
 	void OnDestroy(){
 		if (enemyTag == "EnemyBullet" && health <= 0){
 			score = 0;
-			scoreText.text = "SCORE: 0000";
-			SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
+            //scoreText.text = "SCORE: 0000";
 			//Debug.Log("Dead");
 		}
 		

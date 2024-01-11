@@ -17,7 +17,8 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves:
-  - curve:
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -54,12 +55,14 @@ AnimationClip:
     path: UnlockAll
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -80
+        value: 80
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -91,12 +94,14 @@ AnimationClip:
     path: UnlockAll
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -80
+        value: 80
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -128,7 +133,9 @@ AnimationClip:
     path: Controls
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -165,7 +172,9 @@ AnimationClip:
     path: Reset
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -202,7 +211,9 @@ AnimationClip:
     path: Controls
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -239,7 +250,9 @@ AnimationClip:
     path: Start (11)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -276,7 +289,9 @@ AnimationClip:
     path: Start (9)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -313,7 +328,9 @@ AnimationClip:
     path: Start (1)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -350,7 +367,9 @@ AnimationClip:
     path: Start (5)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -387,7 +406,9 @@ AnimationClip:
     path: Start (3)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -424,7 +445,9 @@ AnimationClip:
     path: Start (7)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -461,7 +484,9 @@ AnimationClip:
     path: Start (8)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -498,7 +523,9 @@ AnimationClip:
     path: Start (6)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -535,7 +562,9 @@ AnimationClip:
     path: Start (4)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -572,7 +601,9 @@ AnimationClip:
     path: Start (10)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -609,7 +640,9 @@ AnimationClip:
     path: Start (2)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -646,7 +679,9 @@ AnimationClip:
     path: Start
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -683,7 +718,9 @@ AnimationClip:
     path: Start (12)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -720,7 +757,9 @@ AnimationClip:
     path: About
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -757,7 +796,9 @@ AnimationClip:
     path: Credits
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -794,6 +835,7 @@ AnimationClip:
     path: Death Mode
     classID: 224
     script: {fileID: 0}
+    flags: 16
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -810,6 +852,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1622715056
       attribute: 538195251
@@ -818,6 +861,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 60550761
       attribute: 538195251
@@ -826,6 +870,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2438762569
       attribute: 538195251
@@ -834,6 +879,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 60550761
       attribute: 1460864421
@@ -842,6 +888,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 4007809464
       attribute: 1460864421
@@ -850,6 +897,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 955250259
       attribute: 1460864421
@@ -858,6 +906,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 4030102619
       attribute: 1460864421
@@ -866,6 +915,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2488973663
       attribute: 1460864421
@@ -874,6 +924,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3254787801
       attribute: 1460864421
@@ -882,6 +933,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2792152029
       attribute: 1460864421
@@ -890,6 +942,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 569689874
       attribute: 1460864421
@@ -898,6 +951,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3212307100
       attribute: 1460864421
@@ -906,6 +960,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2369882142
       attribute: 1460864421
@@ -914,6 +969,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 4160315641
       attribute: 1460864421
@@ -922,6 +978,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3675991960
       attribute: 1460864421
@@ -930,6 +987,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1589148299
       attribute: 1460864421
@@ -938,6 +996,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3318678139
       attribute: 538195251
@@ -946,6 +1005,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1949634023
       attribute: 538195251
@@ -954,6 +1014,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2393565410
       attribute: 538195251
@@ -962,6 +1023,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1435749088
       attribute: 538195251
@@ -970,6 +1032,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
       isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
@@ -992,7 +1055,8 @@ AnimationClip:
     m_HeightFromFeet: 0
     m_Mirror: 0
   m_EditorCurves:
-  - curve:
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1029,12 +1093,14 @@ AnimationClip:
     path: UnlockAll
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -80
+        value: 80
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1066,12 +1132,14 @@ AnimationClip:
     path: UnlockAll
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -80
+        value: 80
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1103,7 +1171,9 @@ AnimationClip:
     path: Controls
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1140,7 +1210,9 @@ AnimationClip:
     path: Reset
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1177,7 +1249,9 @@ AnimationClip:
     path: Controls
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1214,7 +1288,9 @@ AnimationClip:
     path: Start (11)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1251,7 +1327,9 @@ AnimationClip:
     path: Start (9)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1288,7 +1366,9 @@ AnimationClip:
     path: Start (1)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1325,7 +1405,9 @@ AnimationClip:
     path: Start (5)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1362,7 +1444,9 @@ AnimationClip:
     path: Start (3)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1399,7 +1483,9 @@ AnimationClip:
     path: Start (7)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1436,7 +1522,9 @@ AnimationClip:
     path: Start (8)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1473,7 +1561,9 @@ AnimationClip:
     path: Start (6)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1510,7 +1600,9 @@ AnimationClip:
     path: Start (4)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1547,7 +1639,9 @@ AnimationClip:
     path: Start (10)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1584,7 +1678,9 @@ AnimationClip:
     path: Start (2)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1621,7 +1717,9 @@ AnimationClip:
     path: Start
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1658,7 +1756,9 @@ AnimationClip:
     path: Start (12)
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1695,7 +1795,9 @@ AnimationClip:
     path: About
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1732,7 +1834,9 @@ AnimationClip:
     path: Credits
     classID: 224
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -1769,6 +1873,7 @@ AnimationClip:
     path: Death Mode
     classID: 224
     script: {fileID: 0}
+    flags: 16
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0

@@ -35,6 +35,7 @@ public class BossControllerNew : MonoBehaviour
     public GameObject giantBullet;
     public GameObject AltGiantBullet;
     public bool hasCircleStrike;
+    public GameObject missile;
     public float escapeDistance = 15f;
     public GameObject laser;
     public bool hasSummon;
@@ -49,6 +50,7 @@ public class BossControllerNew : MonoBehaviour
     bool isAttacking = false;
     GameObject player;
     List<GameObject> projectiles = new List<GameObject>();
+    int lastChoice = 999;
 
 
     // Start is called before the first frame update
@@ -124,6 +126,11 @@ public class BossControllerNew : MonoBehaviour
         if (!isAttacking && (turrets.Count <= 0 || attackWhileHasTurrets))
         {
             int attack = attacks[Random.Range(0, attacks.Count)];
+            while (attacks.Count > 2 && attack == lastChoice)
+            {
+                attack = attacks[Random.Range(0, attacks.Count)];
+            }
+            lastChoice = attack;
             isAttacking = true;
             if (attack == 0)
             {
@@ -354,7 +361,7 @@ public class BossControllerNew : MonoBehaviour
             projectiles.Add(b.gameObject);
         }
 
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(8.75f/crunchSpeed);
         foreach (GameObject proj in projectiles)
         {
             if (proj != null)
@@ -384,7 +391,7 @@ public class BossControllerNew : MonoBehaviour
             b.GetComponent<MoveForward>().speed = crunchSpeed;
             projectiles.Add(b.gameObject);
         }
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(8.75f / crunchSpeed);
         foreach(GameObject proj in projectiles)
         {
             if (proj != null)
@@ -403,14 +410,16 @@ public class BossControllerNew : MonoBehaviour
         Destroy(l, 0.1f);
         player.GetComponent<Renderer>().material.color = Color.blue;
         player.GetComponent<PlayerController>().enabled = false;
+        player.GetComponent<DetectCollisions>().enabled = false;
         yield return new WaitForSeconds(1.5f);
-        var s = Instantiate(largeBullet, transform.position, Quaternion.identity);
+        var s = Instantiate(missile, transform.position, Quaternion.identity);
         s.transform.LookAt(player.transform.position);
         while (Vector3.Distance(player.transform.position, s.transform.position) > escapeDistance)
         {
             yield return null;
         }
         player.GetComponent<PlayerController>().enabled = true;
+        player.GetComponent<DetectCollisions>().enabled = true;
         player.GetComponent<Renderer>().material.color = Color.white;
         yield return new WaitForSeconds(1.75f);
         isAttacking = false;
@@ -433,7 +442,7 @@ public class BossControllerNew : MonoBehaviour
             var SummonedPrefab = Instantiate(planePrefabs1[animalIndex], spawnPos, planePrefabs1[animalIndex].transform.rotation);
             SummonedPrefab.transform.Rotate(0, rotation, 0);
         }
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         isAttacking = false;
     }
 

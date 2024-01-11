@@ -21,7 +21,7 @@ public class RepeatButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     }
     void Update()
     {
-        if (isPressed)
+        if (isPressed || EventSystem.current.IsPointerOverGameObject(0))
         {
             OnClick.Invoke();
         }

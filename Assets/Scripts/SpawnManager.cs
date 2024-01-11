@@ -50,6 +50,8 @@ public class SpawnManager : MonoBehaviour
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
             int animalIndex = Random.Range(0, planePrefabs1.Length);
             Instantiate(planePrefabs1[animalIndex], spawnPos, planePrefabs1[animalIndex].transform.rotation);
+			if (flicker.instance != null)
+				flicker.instance.TriggerUpdate();
         }
         yield return new WaitForSeconds(3);
         var iboss1 = Instantiate(boss1, new Vector3(Random.Range(-spawnRangeX/2, spawnRangeX/2), 0, spawnPosZ), boss1.transform.rotation);

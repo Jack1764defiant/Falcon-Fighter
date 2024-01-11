@@ -1294,6 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 4024933609461192494}
+  pixelCameraPrefab: {fileID: 1480752209826264060, guid: f35ff7dcdcbe73b43917893648fc106d, type: 3}
 --- !u!1 &7213733514089130565
 GameObject:
   m_ObjectHideFlags: 0
